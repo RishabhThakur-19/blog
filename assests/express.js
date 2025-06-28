@@ -7,12 +7,12 @@ require('dotenv').config();
 
 const url=process.env.url;
 
-const port=process.env.PORT || 3000 ;
+const PORT=process.env.PORT || 3000 ;
 
 mongoose.connect(url)
   .then((result)=>{
     console.log("connected"),
-    app.listen(port,'localhost',()=>{
+    app.listen(PORT,()=>{
         console.log('listening')
   })}).catch((err)=>{
     console.log(err);
