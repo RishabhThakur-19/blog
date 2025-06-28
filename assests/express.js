@@ -11,7 +11,7 @@ const url=process.env.url;
 mongoose.connect(url)
   .then((result)=>{
     console.log("connected"),
-    app.listen(process.env.PORT,'localhost',()=>{
+    app.listen(process.env.PORT || 3000,'localhost',()=>{
         console.log('listening')
   })}).catch((err)=>{
     console.log(err);
