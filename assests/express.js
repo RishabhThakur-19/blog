@@ -3,8 +3,9 @@ const morgan=require('morgan')
 const app=express();
 const mongoose=require('mongoose');
 const Blog=require('./models/blog.js')
+require('dotenv').config();
 
-const url='mongodb+srv://rishabh:test123@cluster0.9p22fcx.mongodb.net/node-tuts';
+const url=process.env.url;
 
 
 mongoose.connect(url)

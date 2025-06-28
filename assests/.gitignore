@@ -1,0 +1,15 @@
+.env
+assests/copy.js
+assests/expresscopy.js
+assests/app.js
+assests/models/comment.js
+assests/path/about.css
+assests/path/style.css
+assests/views/comments.ejs
+assests/views/detailscopy.ejs
+node_modules/
+second.js
+test.js
+text.js
+second.js
+render.js
